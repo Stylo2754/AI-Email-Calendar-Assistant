@@ -1,0 +1,74 @@
+Requirement already satisfied: langgraph-api==0.2.56 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (0.2.56)
+Requirement already satisfied: langchain-core in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (0.3.63)
+Requirement already satisfied: langgraph in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (0.2.76)
+Requirement already satisfied: langsmith in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (0.2.11)
+Requirement already satisfied: cloudpickle>=3.0.0 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from langgraph-api==0.2.56) (3.1.1)
+Requirement already satisfied: cryptography<45.0,>=42.0.0 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from langgraph-api==0.2.56) (44.0.3)
+Requirement already satisfied: httpx>=0.25.0 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from langgraph-api==0.2.56) (0.28.1)
+Requirement already satisfied: jsonschema-rs<0.30,>=0.20.0 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from langgraph-api==0.2.56) (0.29.1)
+Collecting langchain-core
+  Using cached langchain_core-0.3.65-py3-none-any.whl.metadata (5.8 kB)
+Requirement already satisfied: langgraph-checkpoint>=2.0.23 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from langgraph-api==0.2.56) (2.1.0)
+Requirement already satisfied: langgraph-runtime-inmem<0.4,>=0.3.0 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from langgraph-api==0.2.56) (0.3.0)
+Requirement already satisfied: langgraph-sdk>=0.1.66 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from langgraph-api==0.2.56) (0.1.70)
+Collecting langgraph
+  Using cached langgraph-0.4.8-py3-none-any.whl.metadata (6.8 kB)
+Collecting langsmith
+  Using cached langsmith-0.4.1-py3-none-any.whl.metadata (15 kB)
+Requirement already satisfied: orjson>=3.9.7 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from langgraph-api==0.2.56) (3.10.18)
+Requirement already satisfied: pyjwt>=2.9.0 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from langgraph-api==0.2.56) (2.10.1)
+Requirement already satisfied: sse-starlette<2.2.0,>=2.1.0 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from langgraph-api==0.2.56) (2.1.3)
+Requirement already satisfied: starlette>=0.38.6 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from langgraph-api==0.2.56) (0.47.0)
+Requirement already satisfied: structlog<26,>=24.1.0 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from langgraph-api==0.2.56) (25.4.0)
+Requirement already satisfied: tenacity>=8.0.0 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from langgraph-api==0.2.56) (9.1.2)
+Requirement already satisfied: truststore>=0.1 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from langgraph-api==0.2.56) (0.10.1)
+Requirement already satisfied: uvicorn>=0.26.0 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from langgraph-api==0.2.56) (0.34.3)
+Requirement already satisfied: watchfiles>=0.13 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from langgraph-api==0.2.56) (1.1.0)
+Requirement already satisfied: cffi>=1.12 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from cryptography<45.0,>=42.0.0->langgraph-api==0.2.56) (1.17.1)
+Requirement already satisfied: blockbuster<2.0.0,>=1.5.24 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from langgraph-runtime-inmem<0.4,>=0.3.0->langgraph-api==0.2.56) (1.5.24)
+Requirement already satisfied: forbiddenfruit>=0.1.4 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from blockbuster<2.0.0,>=1.5.24->langgraph-runtime-inmem<0.4,>=0.3.0->langgraph-api==0.2.56) (0.1.4)
+Requirement already satisfied: anyio in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from sse-starlette<2.2.0,>=2.1.0->langgraph-api==0.2.56) (4.9.0)
+  Using cached langsmith-0.3.45-py3-none-any.whl.metadata (15 kB)
+Requirement already satisfied: jsonpatch<2.0,>=1.33 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from langchain-core) (1.33)
+Requirement already satisfied: PyYAML>=5.3 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from langchain-core) (6.0.2)
+Requirement already satisfied: packaging<25,>=23.2 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from langchain-core) (24.2)
+Requirement already satisfied: typing-extensions>=4.7 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from langchain-core) (4.14.0)
+Requirement already satisfied: pydantic>=2.7.4 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from langchain-core) (2.11.7)
+Requirement already satisfied: requests<3,>=2 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from langsmith) (2.32.4)
+Requirement already satisfied: requests-toolbelt<2.0.0,>=1.0.0 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from langsmith) (1.0.0)
+Requirement already satisfied: zstandard<0.24.0,>=0.23.0 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from langsmith) (0.23.0)
+Requirement already satisfied: certifi in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from httpx>=0.25.0->langgraph-api==0.2.56) (2025.6.15)
+Requirement already satisfied: httpcore==1.* in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from httpx>=0.25.0->langgraph-api==0.2.56) (1.0.9)
+Requirement already satisfied: idna in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from httpx>=0.25.0->langgraph-api==0.2.56) (3.10)
+Requirement already satisfied: h11>=0.16 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from httpcore==1.*->httpx>=0.25.0->langgraph-api==0.2.56) (0.16.0)
+Requirement already satisfied: jsonpointer>=1.9 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from jsonpatch<2.0,>=1.33->langchain-core) (3.0.0)
+Requirement already satisfied: annotated-types>=0.6.0 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from pydantic>=2.7.4->langchain-core) (0.7.0)
+Requirement already satisfied: pydantic-core==2.33.2 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from pydantic>=2.7.4->langchain-core) (2.33.2)
+Requirement already satisfied: typing-inspection>=0.4.0 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from pydantic>=2.7.4->langchain-core) (0.4.1)
+Requirement already satisfied: charset_normalizer<4,>=2 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from requests<3,>=2->langsmith) (3.4.2)
+Requirement already satisfied: urllib3<3,>=1.21.1 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from requests<3,>=2->langsmith) (2.4.0)
+Requirement already satisfied: langgraph-prebuilt>=0.2.0 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from langgraph) (0.2.2)
+Requirement already satisfied: xxhash>=3.5.0 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from langgraph) (3.5.0)
+Requirement already satisfied: pycparser in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from cffi>=1.12->cryptography<45.0,>=42.0.0->langgraph-api==0.2.56) (2.22)
+Requirement already satisfied: ormsgpack>=1.10.0 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from langgraph-checkpoint>=2.0.23->langgraph-api==0.2.56) (1.10.0)
+Requirement already satisfied: sniffio>=1.1 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from anyio->sse-starlette<2.2.0,>=2.1.0->langgraph-api==0.2.56) (1.3.1)
+Requirement already satisfied: click>=7.0 in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from uvicorn>=0.26.0->langgraph-api==0.2.56) (8.2.1)
+Requirement already satisfied: colorama in c:\users\stanl\appdata\local\programs\python\python313\lib\site-packages (from click>=7.0->uvicorn>=0.26.0->langgraph-api==0.2.56) (0.4.6)
+Using cached langchain_core-0.3.65-py3-none-any.whl (438 kB)
+Using cached langsmith-0.3.45-py3-none-any.whl (363 kB)
+Using cached langgraph-0.4.8-py3-none-any.whl (152 kB)
+Installing collected packages: langsmith, langchain-core, langgraph
+  Attempting uninstall: langsmith
+    Found existing installation: langsmith 0.2.11
+    Uninstalling langsmith-0.2.11:
+      Successfully uninstalled langsmith-0.2.11
+  Attempting uninstall: langchain-core
+    Found existing installation: langchain-core 0.3.63
+    Uninstalling langchain-core-0.3.63:
+      Successfully uninstalled langchain-core-0.3.63
+  Attempting uninstall: langgraph
+    Found existing installation: langgraph 0.2.76
+    Uninstalling langgraph-0.2.76:
+      Successfully uninstalled langgraph-0.2.76
+
+Successfully installed langchain-core-0.3.65 langgraph-0.4.8 langsmith-0.3.45

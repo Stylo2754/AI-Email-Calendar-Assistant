@@ -1,32 +1,28 @@
 [tool.poetry]
 name = "eaia"
 version = "0.1.0"
-description = ""
+description = "Executive AI Assistant"
 authors = []
 readme = "README.md"
+packages = [{include = "eaia"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-langgraph = "^0.2.48"
-langgraph-checkpoint = "^2.0.0"
-langchain = "^0.3.9"
-langchain-openai = "^0.2"
-langchain-anthropic = "^0.3"
-google-api-python-client = "^2.128.0"
-google-auth-oauthlib = "^1.2.0"
-google-auth-httplib2 = "^0.2.0"
-langgraph-sdk = "^0.1"
-langsmith = "^0.2"
+langgraph = ">=0.3.27"
+langgraph-checkpoint = ">=2.0.0"
+langchain = ">=0.3.9"
+langchain-openai = ">=0.2"
+langchain-anthropic = ">=0.3"
+google-api-python-client = ">=2.128.0"
+google-auth-oauthlib = ">=1.2.0"
+google-auth-httplib2 = ">=0.2.0"
+langgraph-sdk = ">=0.1"
+langsmith = ">=0.2"
 pytz = "*"
 pyyaml = "*"
-python-dateutil = "^2.9.0.post0"
-python-dotenv = "^1.0.1"
-
-[tool.setuptools.packages.find]
-where = ["src"]
-
-[tool.setuptools.package-data]
-customer_support = ["*.txt", "*.rst"]
+python-dateutil = ">=2.9.0.post0"
+python-dotenv = ">=1.0.1"
+langgraph-prebuilt = ">=0.2.2"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.4"
@@ -34,7 +30,7 @@ pytest-asyncio = "^0.23.6"
 pytest = "^8.2.0"
 pytest-watch = "^4.2.0"
 vcrpy = "^6.0.1"
-langgraph-cli = "^0.1.35"
+langgraph-cli = ">=0.1.35"
 
 [build-system]
 requires = ["poetry-core"]

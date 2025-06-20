@@ -25,7 +25,7 @@ _SCOPES = [
     "https://www.googleapis.com/auth/gmail.modify",
     "https://www.googleapis.com/auth/calendar",
 ]
-_ROOT = Path(__file__).parent.absolute()
+_ROOT = Path(__file__).parent.parent.absolute()
 _PORT = 54191
 _SECRETS_DIR = _ROOT / ".secrets"
 _SECRETS_PATH = str(_SECRETS_DIR / "secrets.json")
