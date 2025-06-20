@@ -1,0 +1,23 @@
+# Git
+.git
+.gitignore
+
+# Python
+.venv
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Secrets
+.secrets/
+.env
+
+# IDE
+.idea/
+.vscode/
+
+# Other
+.DS_Store
+*.lock
+poetry.lock 
