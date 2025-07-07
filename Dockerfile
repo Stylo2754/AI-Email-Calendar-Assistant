@@ -2,21 +2,22 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-# Install poetry
-RUN pip install --no-cache-dir poetry
+# Install poetry and langgraph CLI in one layer for efficiency
+RUN pip install --no-cache-dir poetry langgraph-cli \
+    && rm -rf /root/.cache/pip
 
-# Install langgraph CLI
-RUN pip install langgraph-cli
-
-# Copy only pyproject.toml and poetry.lock first to leverage Docker cache
+# Copy only pyproject.toml, poetry.lock, and README.md first to leverage Docker cache
 COPY pyproject.toml poetry.lock* README.md ./
-COPY eaia/ ./eaia/
 
 # Install dependencies into the system's python environment
-RUN poetry config virtualenvs.create false \
-    && poetry install --no-interaction --no-ansi --only main
+ENV POETRY_VIRTUALENVS_CREATE=false \
+    POETRY_NO_INTERACTION=1 \
+    POETRY_CACHE_DIR='/tmp/poetry-cache'
+RUN poetry install --no-ansi --only main \
+    && rm -rf $POETRY_CACHE_DIR
 
 # Copy the rest of the application code
+COPY eaia/ ./eaia/
 COPY scripts/ ./scripts/
 COPY langgraph.json .
 
