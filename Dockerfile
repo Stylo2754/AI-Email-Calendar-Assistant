@@ -18,7 +18,7 @@ COPY scripts/ ./scripts/
 COPY langgraph.json .
 
 # The default port for the langgraph server
-EXPOSE 8000
+EXPOSE 8080
 
-# The command to run the application using the langgraph CLI
-CMD ["langgraph", "up"] 
+# The command to run the application using the langgraph CLI, using the PORT env variable if set
+CMD ["langgraph", "up", "--port", "${PORT:-8080}"] 
