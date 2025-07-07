@@ -6,7 +6,7 @@ WORKDIR /app
 RUN pip install --no-cache-dir poetry
 
 # Copy only pyproject.toml and poetry.lock first to leverage Docker cache
-COPY pyproject.toml poetry.lock* ./
+COPY pyproject.toml poetry.lock* README.md ./
 
 # Install dependencies into the system's python environment
 RUN poetry config virtualenvs.create false \
