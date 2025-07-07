@@ -15,7 +15,6 @@ RUN poetry config virtualenvs.create false \
 
 # Copy the rest of the application code
 COPY scripts/ ./scripts/
-COPY config.yaml .
 COPY langgraph.json .
 
 # The default port for the langgraph server
