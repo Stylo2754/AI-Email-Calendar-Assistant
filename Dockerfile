@@ -7,13 +7,13 @@ RUN pip install --no-cache-dir poetry
 
 # Copy only pyproject.toml and poetry.lock first to leverage Docker cache
 COPY pyproject.toml poetry.lock* README.md ./
+COPY eaia/ ./eaia/
 
 # Install dependencies into the system's python environment
 RUN poetry config virtualenvs.create false \
     && poetry install --no-interaction --no-ansi --only main
 
 # Copy the rest of the application code
-COPY eaia/ ./eaia/
 COPY scripts/ ./scripts/
 COPY config.yaml .
 COPY langgraph.json .
